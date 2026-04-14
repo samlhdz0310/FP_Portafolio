@@ -1,4 +1,4 @@
-//Imprime piramide vacia *tarea
+//Imptime piramide invertida
 #include <stdio.h>
 
 void main(){
@@ -7,13 +7,13 @@ void main(){
     scanf("%d", &n);
 
     for (i = n; i >= 1; i--){
+        for (k=1; k<=((n-i)*2); k++)
+                printf(" ");
+
         for (j = 1; j <= i; j++)
             printf("%d ", j);
         
-        for (k=1; k<=((n-i+(1))*4); k++)
-                printf(" ");
-
-        for (j = i; j >= 1; j--)
+        for (j = i-1; j >= 1; j--)
             printf("%d ", j);
         
         printf("\n");    

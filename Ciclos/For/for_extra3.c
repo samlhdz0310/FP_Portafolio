@@ -1,4 +1,4 @@
-//Imptime piramide invertida
+//Imprime piramide vacia inversa
 #include <stdio.h>
 
 void main(){
@@ -6,14 +6,15 @@ void main(){
     printf("Ingresa un número\n");
     scanf("%d", &n);
 
-    for (i = n; i >= 1; i--){
-        for (k=1; k<=(n-i)*2; k++)
-                printf(" ");
+    for (i = 1; i <= n; i++){
 
         for (j = 1; j <= i; j++)
             printf("%d ", j);
-        
-        for (j = i-1; j >= 1; j--)
+
+        for (k=1; k<=((n-i)*2); k++)
+            printf(" ");
+
+        for (j = i; j >= 1; j--)
             printf("%d ", j);
         
         printf("\n");    
