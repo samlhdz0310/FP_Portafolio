@@ -1,0 +1,6 @@
+Pedro   18  0
+Juan    20  1
+Maria   19  1
+Juana   18  0
+Alfonso	20	0
+Nepamuceno	42	0
